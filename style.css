@@ -614,7 +614,7 @@ th {
 
     .btnheader img {
       float: left;
-      width: 32px;
+     
       height: 32px;
       margin-right: 4px;
       background: white; }
@@ -837,7 +837,7 @@ body {
 }
 
 
-img {
+.screenshot {
   width: 42%; 
 }
 
