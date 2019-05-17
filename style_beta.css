@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700");
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */ 
+  margin: auto;
+  width:75%;
+}
+
+
+  .main-content {
+    word-wrap: break-word; 
+
+  
+  }
+  
+  
+.screenshot {
+    max-width: 40%;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1;
+  color: #606c71; }
+
+
+/* Drill logo and title */
+
+.header img {
+    float: left;
+    width: 100px;
+    height: 100px;
+    background: white; 
+}
+  
+  .header h1 {
+    position: relative;
+    top: 18px;
+    left: 10px; 
+}
+
+
+.project-name {
+  margin-top: 0;
+  margin-bottom: 0.1rem;
+  color: black; }
+
+
+body {
+    margin: 0;
+}
+   
+
+
+  
+.btnheader img {
+    float: left;
+   
+    height: 32px;
+    margin-right: 4px;
+    background: white; 
+}
+
+
+.btn {
+    display: inline-block;
+    margin-bottom: 1rem;
+    color: black;
+    background-color: white;
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 0.3rem;
+    transition: color 0.2s, background-color 0.2s, border-color 0.2s; 
+
+    min-width: 200px;
+    text-align: center;
+    display: flex;
+    justify-content:center;
+    align-content:center;
+    flex-direction:column; /* column | row */
+}
+  
+.btn:hover {
+color: grey;
+text-decoration: none;
+background-color: white;
+border-color: grey; 
+
+}
+
+
+
+@media screen and (min-width: 64em) {
+    .btn {
+      padding: 0.5rem 0.75rem; 
+     
+      
+    } 
+}
+  @media screen and (min-width: 42em) and (max-width: 64em) {
+    .btn {
+      padding: 0.6rem 0.9rem;
+      font-size: 0.9rem; 
+    } 
+}
+  @media screen and (max-width: 42em) {
+    .btn {
+      display: block;
+      width: 100%;
+      padding: 0.75rem;
+      font-size: 0.9rem; 
+    }
+  
+  }
+  
+
+  /* Selects any disabled <input> */
+.disabled {
+    
+    cursor: not-allowed;
+    color: grey;
+    text-decoration: line-through;
+    filter: grayscale(1);
+
+    
+  }
+  
+.disabled:hover{
+    text-decoration: none; 
+}
+
+
+
+a {
+    /* color: #1e6bb8; */
+    text-decoration: none; 
+    -webkit-column-span: 1; /* Chrome, Safari, Opera */
+  
+}
+  
+a:hover {
+    text-decoration: underline; 
+}
+  
+.downloads {
+    width: 100%;
+    -webkit-column-count: 5; /* Chrome, Safari, Opera */
+  -moz-column-count: 5; /* Firefox */
+    column-count: 5;
+    
+
+  
+}
+
+.os-header img {
+    float: left;
+    width: 32px;
+    height: 32px;
+    background: white; 
+}
