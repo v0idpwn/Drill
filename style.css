@@ -225,6 +225,19 @@ a {
 
 }
 
+.currently-active {
+                    
+  border: solid 1px #AFAFAF;
+  border-radius: 0.5em;
+  padding: 0.5em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  text-align: center;
+justify-content:center;
+align-content:center;
+align-items: center;
+}
+
 .site-footer img{
   height: 2em;
 }
@@ -241,12 +254,37 @@ a {
 
 .footer-buttons-travis {
   display: flex;
-  flex-direction: row;
+
+  
+ 
   flex-wrap: wrap;
   padding-top: 1em;
+
+  justify-content:center;
+align-content:center;
+align-items: center;
+}
+
+@media all and (orientation: portrait) {
+  .footer-buttons-travis {
+    flex-direction: column;
+  }
+}
+@media all and (orientation: landscape) {
+  .footer-buttons-travis {
+    flex-direction: row;
+  }
 }
 
 .footer-buttons a{
   padding: 0.1em;
 }
 
+
+
+
+@media all and (orientation: portrait) {
+  .desktop-only {
+  display: none;
+  }
+}

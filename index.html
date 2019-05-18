@@ -43,7 +43,13 @@
 
 <body>
 
-
+<div class="desktop-only">
+    <a href="https://github.com/yatima1460/Drill/fork" target="_blank">
+        <img width="149" height="149" src="https://github.blog/wp-content/uploads/2008/12/forkme_right_darkblue_121621.png?resize=149%2C149" 
+        class="attachment-full size-full" style="position: fixed; top: 0; right: 0; z-index: 999;"
+        alt="Fork me on GitHub" data-recalc-dims="1">
+    </a>
+</div>
     <main id="content" class="main-content" role="main">
         <div class="title">
             <img src="https://raw.githubusercontent.com/yatima1460/Drill/761466e9c32038b22c42d4242bdfebf8dd89d01f/assets/icon.svg?sanitize=true"
@@ -236,8 +242,6 @@
 
     </main>
 
-
-
     <footer class="site-footer">
 
             <div class="footer-button-social">
@@ -262,10 +266,12 @@
         <a href="https://github.com/yatima1460/Drill/blob/master/LICENSE" target="_blank"><img
                 src="https://img.shields.io/github/license/yatima1460/Drill.svg"></a>
 
+        
         </div>
         
         <p>Drill is maintained by <a href="https://www.linkedin.com/in/yatima1460/" target="_blank">Federico Santamorena</a></p>
      
+   
         <p>
             Like it? Consider a donation to support the project!
         </p>
@@ -278,9 +284,36 @@
                 name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
             <img alt="" border="0" src="https://www.paypal.com/en_IT/i/scr/pixel.gif" width="1" height="1" />
         </form>
+        <div class="currently-active">
+            <span id="active"></span> <span> users online</span>
+           </div>
         <div>Some icons are made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> and <a href="https://www.flaticon.com/authors/icomoon" title="Icomoon">Icomoon</a> from <a href="https://www.flaticon.com/" 		    title="Flaticon">www.flaticon.com</a> and licensed with <a href="http://creativecommons.org/licenses/by/3.0/" 		    title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
     </footer>
-
+        
+    
 </body>
+
+<script src="https://cdn.pubnub.com/sdk/javascript/pubnub.4.20.2.js"></script>
+<script>
+var active = document.getElementById('active');
+function setCurrentlyActiveUsers(numberOfUsers) {
+  active.innerText = numberOfUsers.toString();
+}
+setCurrentlyActiveUsers(1);
+var pubnub = new PubNub({
+    publishKey : 'pub-c-9b361f7e-f8f2-43e6-837d-66183ccd9ab7',
+    subscribeKey : 'sub-c-aadd61fa-79bb-11e9-a9da-06324c5f6dce',
+    heartbeatInterval: 30
+});
+pubnub.addListener({
+  presence: function(presenceEvent) {
+    setCurrentlyActiveUsers(presenceEvent.occupancy);
+  }
+});
+pubnub.subscribe({ 
+  channels: ['myWebPage1'],
+  withPresence: true
+});
+</script>
 
 </html>
