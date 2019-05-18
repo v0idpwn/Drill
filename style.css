@@ -228,7 +228,9 @@ a {
 .site-footer img{
   height: 2em;
 }
-
+.site-footer a{
+  padding: 0.4em;
+}
 
 .footer-buttons-social {
   display: flex;
