@@ -95,10 +95,10 @@ body {
 }
    
 .btn:hover {
-  color: grey;
-  text-decoration: none;
+  color: red; 
   background-color: white;
-  border-color: grey; 
+  border-color: red; 
+  text-decoration: underline; 
 }
 
 .spacer {
@@ -132,10 +132,6 @@ a {
     /* color: #1e6bb8; */
   text-decoration: none; 
   
-}
-  
-a:hover {
-    text-decoration: underline; 
 }
   
 
@@ -223,3 +219,4 @@ a:hover {
 .footer-buttons a{
   padding: 0.1em;
 }
+
