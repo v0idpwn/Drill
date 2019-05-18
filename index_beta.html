@@ -45,216 +45,191 @@
 
 
     <main id="content" class="main-content" role="main">
-        <div class="header">
+        <div class="title">
             <img src="https://raw.githubusercontent.com/yatima1460/Drill/761466e9c32038b22c42d4242bdfebf8dd89d01f/assets/icon.svg?sanitize=true"
-                srcset="" alt="Drill logo">
+                srcset="" alt="Drill">
             <h1 class="project-name">Drill</h1>
         </div>
-        <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fwww.drill.santamorena.me%2F" target="_blank"><img
-                src="https://img.shields.io/twitter/url/https/github.com/yatima1460/Drill.svg?style=social"></a>
 
-        <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.drill.santamorena.me%2F"
-            target="_blank"><img src="fshare.jpeg" height=20></a>
 
-        <h2 class="project-tagline">Search files without indexing, but clever crawling</h2>
+
+        <h2 class="project-tagline">
+            Search files without indexing, but clever crawling
+        </h2>
 
         <img class="screenshot" src="screenshot.png?sanitize=true">
 
-
-
-
         <div class="downloads">
-            <div class="linux">
+            <div class="os">
                 <div class="os-header">
-                    <img src="linux.png?sanitize=true" srcset="" alt="Linux logo">
+                    <img src="linux.png?sanitize=true" srcset="" alt="Linux">
                     <h1>Linux</h1>
                 </div>
                 <a href="https://github.com/yatima1460/Drill/releases/latest/download/Drill-GTK.AppImage" class="btn">
-                    <div class="btnheader">
-                        <img src="App-image-logo.svg?sanitize=true" srcset="" alt="AppImage logo">
-                        <!-- <img src="gtk.png" srcset="" alt="Debian logo"> -->
-                        AppImage x64
-                    </div>
+                    <img src="App-image-logo.svg?sanitize=true" srcset="" alt="AppImage">
+                    <span class="spacer">AppImage x64</span>
                 </a>
                 <a href="https://github.com/yatima1460/Drill/releases/latest/download/Drill-GTK.deb" class="btn">
-                    <div class="btnheader">
-                        <!-- <img src="linux.png?sanitize=true" srcset="" alt="Terminal logo"> -->
-                        <img src="debian.png" srcset="" alt="Debian logo">
-                        <!-- <img src="gtk.png" srcset="" alt="Debian logo"> -->
-                        .deb
-                    </div>
+                    <img src="debian.png" srcset="" alt="Debian">
+                    <span class="spacer">.deb x64</span>
+                </a>
+                <a href="https://aur.archlinux.org/packages/drill-search-git/" target="_blank" class="btn">
+                    <img src="arch.svg?sanitize=true" srcset="" alt="Arch">
+                    <span class="spacer">Arch AUR</span>
+                </a>
+                <a href="https://github.com/yatima1460/Drill/releases/latest/download/Drill-GTK-AppDir.zip" class="btn">
+                    <img src="zip.svg?sanitize=true" srcset="" alt="Zip">
+                    <span class="spacer">Portable x64</span>
+                </a>
+                <a href="https://github.com/yatima1460/Drill/releases/latest/download/Drill-CLI-AppDir.zip" class="btn">
+                    <img src="zip.svg?sanitize=true" srcset="" alt="Zip">
+                    <span class="spacer">CLI Portable x64</span>
+                </a>
+                <a href="javascript:void(0)" class="btn disabled">
+                    <img src="debian.png" srcset="" alt="Debian">
+                    <span class="spacer">.deb ARM</span>
+                </a>
+                <a href="javascript:void(0)" class="btn disabled">
+                    <img src="debian.png" srcset="" alt="Debian">
+                    <span class="spacer">.deb RISC-V</span>
                 </a>
                 <a href="#" class="btn disabled">
-                        <div class="btnheader">
-                            <!-- <img src="linux.png?sanitize=true" srcset="" alt="Terminal logo"> -->
-                            <img src="snap.png?sanitize=true" srcset="" alt="Snap logo">
-                            <!-- <img src="gtk.png" srcset="" alt="Debian logo"> -->
-                            Snap GTK x64
-                        </div>
-                    </a>
-        
-        
-        
-                    <a href="https://github.com/yatima1460/Drill/releases/latest/download/Drill-GTK-AppDir.zip" class="btn">
-                        <div class="btnheader">
-                            <img src="linux.png?sanitize=true" srcset="" alt="Terminal logo">
-                            <!-- <img src="gtk.png" srcset="" alt="Debian logo"> -->
-                            Drill.zip
-                        </div>
-                    </a>
-        
-                    <a href="#" class="btn disabled">
-                        <div class="btnheader">
-                            <!-- <img src="linux.png?sanitize=true" srcset="" alt="Terminal logo"> -->
-                            <img src="redhat.png" srcset="" alt="RedHat logo">
-                            <!-- <img src="gtk.png" srcset="" alt="Debian logo"> -->
-                            .rpm
-                        </div>
-                    </a>
-        
-                    <a href="https://github.com/yatima1460/Drill/releases/latest/download/Drill-CLI-AppDir.zip" class="btn">
-                        <div class="btnheader">
-                            <img src="linux.png?sanitize=true" srcset="" alt="Terminal logo">
-                            <img src="terminal.svg?sanitize=true" srcset="" alt="Terminal logo">
-                            Drill CLI.zip
-                        </div>
-                    </a>
-        
-                    <a href="https://aur.archlinux.org/packages/drill-search-git/" target="_blank" class="btn">
-                        <div class="btnheader">
-                            <!-- <img src="linux.png?sanitize=true" srcset="" alt="Terminal logo"> -->
-                            <img src="arch.svg?sanitize=true" srcset="" alt="Arch logo">
-                            <!-- <img src="gtk.png" srcset="" alt="Debian logo"> -->
-                            Arch AUR
-                        </div>
-                    </a>
-        
-                    <a href="#" class="btn disabled">
-                        <div class="btnheader">
-                            <!-- <img src="linux.png?sanitize=true" srcset="" alt="Terminal logo"> -->
-                            <img src="flatpak.png?sanitize=true" srcset="" alt="Flatpak logo">
-                            <!-- <img src="gtk.png" srcset="" alt="Debian logo"> -->
-                            Flatpak
-                        </div>
-                    </a>
-
-                <div class="windows">
-                        <a href="#" class="btn disabled">
-                            <div class="btnheader">
-                                <img src="zip.svg?sanitize=true" srcset="" alt="Windows logo">
-                                Portable x64.zip
-                            </div>
-                        </a>
-    
-                    </div>
+                    <img src="snap.png?sanitize=true" srcset="" alt="Snap">
+                    <span class="spacer">Snap x64</span>
+                </a>
+                <a href="#" class="btn disabled">
+                    <img src="redhat.png" srcset="" alt="RedHat">
+                    <span class="spacer">.rpm x64</span>
+                </a>
+                <a href="#" class="btn disabled">
+                    <img src="flatpak.png?sanitize=true" srcset="" alt="Flatpak logo">
+                    <span class="spacer">Flatpak x64</span>
+                </a>
+                <a href="javascript:void(0)" class="btn disabled">
+                    <img src="zip.svg?sanitize=true" srcset="" alt="Zip">
+                    <span class="spacer">CLI Portable x86</span>
+                </a>
+                <a href="javascript:void(0)" class="btn disabled">
+                    <img src="zip.svg?sanitize=true" srcset="" alt="Zip">
+                    <span class="spacer">CLI Portable ARM</span>
+                </a>
+                <a href="javascript:void(0)" class="btn disabled">
+                    <img src="zip.svg?sanitize=true" srcset="" alt="Zip">
+                    <span class="spacer">CLI Portable RISC-V</span>
+                </a>
             </div>
-
-            <div class="windows">
+            <div class="os">
                 <div class="os-header">
                     <img src="windows.png?sanitize=true" srcset="" alt="Windows logo">
-
                     <h1>Windows</h1>
                 </div>
-                <div class="windows">
-                    <a href="#" class="btn disabled">
-                        <div class="btnheader">
-                            <img src="msi.png?sanitize=true" srcset="" alt="Windows logo">
-                            Installer x64
-                        </div>
-                    </a>
-
+                <a href="https://github.com/yatima1460/Drill/releases/latest/download/Drill-GTK-Windows-x86.zip" class="btn">
+                    <img src="zip.svg?sanitize=true" srcset="" alt="Windows logo">
+                    <span class="spacer">Portable x86</span>
+                </a>
+                <a href="https://github.com/yatima1460/Drill/releases/latest/download/Drill-CLI-Windows-x86.zip" class="btn">
+                    <img src="zip.svg?sanitize=true" srcset="" alt="Windows logo">
+                    <span class="spacer">CLI Portable x86</span>
+                </a>
+                <a href="#" class="btn disabled">
+                    <img src="msi.png?sanitize=true" srcset="" alt="Windows logo">
+                    <span class="spacer">Installer x64</span>
+                </a>
+                <a href="#" class="btn disabled">
+                    <img src="zip.svg?sanitize=true" srcset="" alt="Windows logo">
+                    <span class="spacer">Portable x64</span>
+                </a>
+                <a href="#" class="btn disabled">
+                <img src="msi.png?sanitize=true" srcset="" alt="Windows logo">
+                    <span class="spacer">Installer x86</span>
+                </a>
+                <a href="#" class="btn disabled">
+                    <img src="msi.png?sanitize=true" srcset="" alt="Windows logo">
+                    <span class="spacer">Installer ARM</span>
+                </a>
+                <a href="#" class="btn disabled">
+                    <img src="zip.svg?sanitize=true" srcset="" alt="Windows logo">
+                    <span class="spacer">Portable ARM</span>
+                </a>
+            </div>
+            <div class="os">
+                <div class="os-header">
+                    <img src="apple.png?sanitize=true" srcset="" alt="Windows logo">
+                    <h1>OSX</h1>
                 </div>
+                <a href="#" class="btn disabled">
+                        <img src="Mac_OS_X_Disk_Image.png" srcset="" alt="Windows logo">
+                        <span class="spacer">.dmg x64</span>
+                </a>
+                <a href="#" class="btn disabled">
+                    <img src="zip.svg?sanitize=true" srcset="" alt="Apple logo">
+                    <span class="spacer">Portable x64</span>
+                </a>
+            </div>
+            <div class="os">
+                <div class="os-header">
+                    <img src="android.png" srcset="" alt="Android logo">
+                    <h1>Android</h1>
+                </div>
+                <a href="#" class="btn disabled">
+                    <img src="apk.svg?sanitize=true" srcset="" alt="Android logo">
+                    <span class="spacer">APK</span>
+                </a>
+
 
             </div>
-            <div class="osx">
-                
-                    <a href="#" class="btn disabled">
-                            <div class="btnheader">
-                                <img src="apple.png?sanitize=true" srcset="" alt="Apple logo">
-                                OSX x64
-                            </div>
-                        </a>
-            </div>
-            <div class="android">
-                    <div class="os-header">
-                            <img src="android.png" srcset="" alt="Android logo">
-        
-                            <h1>Android</h1>
-                        </div>
-                    <a href="#" class="btn disabled">
-                            <div class="btnheader">
-                                <img src="linux.png?sanitize=true" srcset="" alt="Terminal logo">
-                                <img src="android.png?sanitize=true" srcset="" alt="Android logo">
-                                Android APK
-                            </div>
-                        </a>
-                     
-                           
-            </div>
-            <div class="source">
+            <div class="os">
                 <div class="os-header">
                     <img src="dlang.svg" srcset="" alt="Dlang logo">
-
                     <h1>Source</h1>
                 </div>
 
-     
+
                 <a href="http://github.com/yatima1460/Drill" target="_blank" class="btn">
-                    <div class="btnheader">
-                        <img src="Octocat.jpg?sanitize=true" srcset="" alt="GitHub logo">
-                        GitHub
-                    </div>
+                   
+                        <img src="Octocat.jpg?sanitize=true" srcset="" alt="github">
+                        <span class="spacer">GitHub</span>
+
                 </a>
-    
-    
+
+
                 <a href="http://github.com/yatima1460/Drill/zipball/master/" class="btn">
-                    <div class="btnheader">
-                        <img src="dlang.svg?sanitize=true" srcset="" alt="Source .zip">
-                        .zip
-                    </div>
+               
+                        <img src="zip.svg?sanitize=true" srcset="" alt=".zip">
+                        <span class="spacer">.zip</span>
+                
                 </a>
                 <a href="http://github.com/yatima1460/Drill/tarball/master/" class="btn">
-                    <div class="btnheader">
-                        <img src="dlang.svg?sanitize=true" srcset="" alt="Source .tar.gz">
-                        Source .tar.gz
-                    </div>
+                   
+                        <img src="gz.svg?sanitize=true" srcset="" alt=".tar.gz">
+                        <span class="spacer">.tar.gz</span>
+                  
                 </a>
-             
+
             </div>
-        </div>
-    
-
-            
-        </div>
-
-      
-          
-               
-           
-
-      
-     
-            
-
-
-
-
-     
-
-
 
         </div>
 
+        
 
     </main>
 
 
 
     <footer class="site-footer">
-        <span class="site-footer-owner">Drill is maintained by <a href="https://www.linkedin.com/in/yatima1460/"
-                target="_blank">Federico
-                Santamorena</a></span>
-        <a href="https://travis-ci.org/yatima1460/Drill" target="_blank"><img
+
+            <div class="footer-buttons">
+        
+                    <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fwww.drill.santamorena.me%2F"
+                        target="_blank"><img
+                            src="https://img.shields.io/twitter/url/https/github.com/yatima1460/Drill.svg?style=social"></a>
+        
+                    <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.drill.santamorena.me%2F"
+                        target="_blank"><img src="fshare.svg?sanitize=true"></a>
+                    </div>
+              
+                    <div class="footer-buttons">
+            <a href="https://travis-ci.org/yatima1460/Drill" target="_blank"><img
                 src="https://travis-ci.org/yatima1460/Drill.svg?branch=master"></a>
         <a href="https://github.com/yatima1460/Drill/issues" target="_blank"><img
                 src="https://img.shields.io/github/issues/yatima1460/Drill.svg"></a>
@@ -265,16 +240,23 @@
         <a href="https://github.com/yatima1460/Drill/blob/master/LICENSE" target="_blank"><img
                 src="https://img.shields.io/github/license/yatima1460/Drill.svg"></a>
 
+        </div>
+        
+        <p>Drill is maintained by <a href="https://www.linkedin.com/in/yatima1460/" target="_blank">Federico Santamorena</a></p>
+     
+        <p>
+            Like it? Consider a donation to support the project!
+        </p>
         <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
             <input type="hidden" name="cmd" value="_donations" />
             <input type="hidden" name="business" value="27PBE8F7PFCGS" />
             <input type="hidden" name="item_name" value="Drill" />
             <input type="hidden" name="currency_code" value="EUR" />
-            <input type="image" src="https://www.paypalobjects.com/en_US/IT/i/btn/btn_donateCC_LG.gif" border="0"
+            <input type="image" src="donate.png" border="0"
                 name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
             <img alt="" border="0" src="https://www.paypal.com/en_IT/i/scr/pixel.gif" width="1" height="1" />
         </form>
-
+        <div>Some icons are made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" 		    title="Flaticon">www.flaticon.com</a> and licensed with <a href="http://creativecommons.org/licenses/by/3.0/" 		    title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
     </footer>
 
 </body>

@@ -13,15 +13,18 @@ html {
 }
 
 
-  .main-content {
-    word-wrap: break-word; 
+.main-content {
+  word-wrap: break-word; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
   
-  }
+}
   
   
 .screenshot {
-    max-width: 40%;
+  max-width: 42%;
 }
 
 body {
@@ -30,121 +33,104 @@ body {
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 16px;
   line-height: 1;
-  color: #606c71; }
+  color: #606c71; 
+}
 
 
 /* Drill logo and title */
 
-.header img {
-    float: left;
-    width: 100px;
-    height: 100px;
-    background: white; 
-}
-  
-  .header h1 {
-    position: relative;
-    top: 18px;
-    left: 10px; 
-}
+
 
 
 .project-name {
   margin-top: 0;
   margin-bottom: 0.1rem;
-  color: black; }
+  color: black; 
+}
 
+
+.project-tagline{
+  text-align: center;
+}
 
 body {
-    margin: 0;
+  margin: 0;
 }
    
 
 
+
+.btn img {
+  float: left;
   
-.btnheader img {
-    float: left;
-   
-    height: 32px;
-    margin-right: 4px;
-    background: white; 
+  height: 2em;
+  
+  background: white; 
 }
 
 
-.btn {
-    display: inline-block;
+ .btn {
+    display: flex;
+    flex-direction: row;
+
     margin-bottom: 1rem;
     color: black;
     background-color: white;
     border-color: black;
     border-style: solid;
-    border-width: 1px;
+    border-width: 0.05em;
     border-radius: 0.3rem;
     transition: color 0.2s, background-color 0.2s, border-color 0.2s; 
 
-    min-width: 200px;
+    
+
     text-align: center;
-    display: flex;
     justify-content:center;
     align-content:center;
-    flex-direction:column; /* column | row */
-}
+    align-items: center;
+
+ 
+    
   
+}
+   
 .btn:hover {
-color: grey;
-text-decoration: none;
-background-color: white;
-border-color: grey; 
-
+  color: grey;
+  text-decoration: none;
+  background-color: white;
+  border-color: grey; 
 }
 
-
-
-@media screen and (min-width: 64em) {
-    .btn {
-      padding: 0.5rem 0.75rem; 
-     
-      
-    } 
+.spacer {
+  width: 100%;
 }
-  @media screen and (min-width: 42em) and (max-width: 64em) {
-    .btn {
-      padding: 0.6rem 0.9rem;
-      font-size: 0.9rem; 
-    } 
-}
-  @media screen and (max-width: 42em) {
-    .btn {
-      display: block;
-      width: 100%;
-      padding: 0.75rem;
-      font-size: 0.9rem; 
-    }
+
+.btn {
   
-  }
-  
+  width: 100%;
+  padding: 0.75rem;
+ 
+}
+
 
   /* Selects any disabled <input> */
 .disabled {
-    
-    cursor: not-allowed;
-    color: grey;
-    text-decoration: line-through;
-    filter: grayscale(1);
+  cursor: not-allowed;
+  color: grey;
+  text-decoration: line-through;
+  filter: grayscale(1);
+  opacity: 0.5;
+}
 
-    
-  }
-  
 .disabled:hover{
-    text-decoration: none; 
+  text-decoration: none; 
 }
 
 
 
 a {
     /* color: #1e6bb8; */
-    text-decoration: none; 
-    -webkit-column-span: 1; /* Chrome, Safari, Opera */
+  text-decoration: none; 
   
 }
   
@@ -152,19 +138,88 @@ a:hover {
     text-decoration: underline; 
 }
   
-.downloads {
-    width: 100%;
-    -webkit-column-count: 5; /* Chrome, Safari, Opera */
-  -moz-column-count: 5; /* Firefox */
-    column-count: 5;
-    
 
+.downloads {
+  display: flex;
+  flex-direction: row; 
+  flex-wrap: wrap;
+  
+ 
+  text-align: center;
+  justify-content:center;
+  align-content:center;
+  
   
 }
 
+
+.title {
+  display: flex;
+  flex-direction: row;
+
+  text-align: center;
+  justify-content:center;
+  align-content:center;
+  align-items: center;
+
+}
+
+.title img {
+    float: left;
+    width: 5em;
+    height: 5em;
+    background: white; 
+}
+
+
+
+.os {
+  /* column | row */
+  display: flex;
+  flex-direction: column; 
+ 
+ 
+  width: 15em;
+  padding: 1em;
+
+}
+
+
+
+
 .os-header img {
     float: left;
-    width: 32px;
-    height: 32px;
+    
+    height: 3em;
     background: white; 
+}
+
+
+.site-footer{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  text-align: center;
+  justify-content:center;
+  align-content:center;
+  align-items: center;
+
+
+
+}
+
+.site-footer img{
+  height: 2em;
+}
+
+
+.footer-buttons {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.footer-buttons a{
+  padding: 0.1em;
 }
