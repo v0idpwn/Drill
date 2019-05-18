@@ -1,0 +1,3 @@
+#!/bin/sh
+
+chmox +x /usr/bin/drill

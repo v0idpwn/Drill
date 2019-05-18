@@ -25,6 +25,12 @@ html {
   
 .screenshot {
   max-width: 42%;
+  border: 0.1em solid grey;
+  border-radius: 0.25em;
+}
+
+.version {
+  padding: 1em;
 }
 
 body {
@@ -157,13 +163,18 @@ a {
   justify-content:center;
   align-content:center;
   align-items: center;
+  padding-top: 2em;
 
+}
+
+.title h1 {
+  font-size: 3em;
 }
 
 .title img {
     float: left;
-    width: 5em;
-    height: 5em;
+    width: 6em;
+    height: 6em;
     background: white; 
 }
 
@@ -176,22 +187,31 @@ a {
  
  
   width: 15em;
-  padding: 1em;
+  padding: 3em;
 
 }
 
 
+.os-header {
+  display: flex;
+  flex-direction: row;
 
+  text-align: center;
+  justify-content:center;
+  align-content:center;
+  align-items: center;
+}
 
 .os-header img {
-    float: left;
     
+    padding-right: 1em;
     height: 3em;
     background: white; 
 }
 
 
 .site-footer{
+  padding-top: 4em;
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -210,10 +230,18 @@ a {
 }
 
 
-.footer-buttons {
+.footer-buttons-social {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+}
+
+
+.footer-buttons-travis {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-top: 1em;
 }
 
 .footer-buttons a{

@@ -59,7 +59,9 @@
 
         <img class="screenshot" src="screenshot.png?sanitize=true">
 
-        Version 1.131
+        <div class="version">
+            Version 1.131
+        </div>
         <div class="downloads">
             
             <div class="os">
@@ -71,9 +73,23 @@
                     <img src="App-image-logo.svg?sanitize=true" srcset="" alt="AppImage">
                     <span class="spacer">AppImage x64</span>
                 </a>
+                                 
+                <a href="javascript:void(0)" class="btn disabled">
+                    <img src="flatpak.png?sanitize=true" srcset="" alt="Flatpak logo">
+                    <span class="spacer">Flatpak x64</span>
+                </a>
+                <a href="javascript:void(0)" class="btn disabled">
+                    <img src="snap.png?sanitize=true" srcset="" alt="Snap">
+                    <span class="spacer">Snap x64</span>
+                </a> 
+  
                 <a href="https://github.com/yatima1460/Drill/releases/download/1.131/Drill-GTK.deb" class="btn">
                     <img src="debian.png" srcset="" alt="Debian">
                     <span class="spacer">.deb x64</span>
+                </a>
+                <a href="javascript:void(0)" class="btn disabled">
+                    <img src="redhat.png" srcset="" alt="RedHat">
+                    <span class="spacer">.rpm x64</span>
                 </a>
                 <a href="https://aur.archlinux.org/packages/drill-search-git/" target="_blank" class="btn">
                     <img src="arch.svg?sanitize=true" srcset="" alt="Arch">
@@ -83,31 +99,29 @@
                     <img src="zip.svg?sanitize=true" srcset="" alt="Zip">
                     <span class="spacer">Portable x64</span>
                 </a>
+            
                 <a href="https://github.com/yatima1460/Drill/releases/download/1.131/Drill-CLI-AppDir.zip" class="btn">
                     <img src="zip.svg?sanitize=true" srcset="" alt="Zip">
                     <span class="spacer">CLI Portable x64</span>
                 </a>
                 <a href="javascript:void(0)" class="btn disabled">
+                    <img src="gz.svg?sanitize=true" srcset="" alt="gz">
+                    <span class="spacer">Portable x64</span>
+                </a>
+                <a href="javascript:void(0)" class="btn disabled">
+                    <img src="gz.svg?sanitize=true" srcset="" alt="gz">
+                    <span class="spacer">CLI Portable x64</span>
+                </a>
+                <!-- <a href="javascript:void(0)" class="btn disabled">
                     <img src="debian.png" srcset="" alt="Debian">
                     <span class="spacer">.deb ARM</span>
                 </a>
                 <a href="javascript:void(0)" class="btn disabled">
                     <img src="debian.png" srcset="" alt="Debian">
                     <span class="spacer">.deb RISC-V</span>
-                </a>
-                <a href="javascript:void(0)" class="btn disabled">
-                    <img src="snap.png?sanitize=true" srcset="" alt="Snap">
-                    <span class="spacer">Snap x64</span>
-                </a>
-                <a href="javascript:void(0)" class="btn disabled">
-                    <img src="redhat.png" srcset="" alt="RedHat">
-                    <span class="spacer">.rpm x64</span>
-                </a>
-                <a href="javascript:void(0)" class="btn disabled">
-                    <img src="flatpak.png?sanitize=true" srcset="" alt="Flatpak logo">
-                    <span class="spacer">Flatpak x64</span>
-                </a>
-                <a href="javascript:void(0)" class="btn disabled">
+                </a>-->
+                
+                <!-- <a href="javascript:void(0)" class="btn disabled">
                     <img src="zip.svg?sanitize=true" srcset="" alt="Zip">
                     <span class="spacer">CLI Portable x86</span>
                 </a>
@@ -118,11 +132,11 @@
                 <a href="javascript:void(0)" class="btn disabled">
                     <img src="zip.svg?sanitize=true" srcset="" alt="Zip">
                     <span class="spacer">CLI Portable RISC-V</span>
-                </a>
+                </a> -->
             </div>
             <div class="os">
                 <div class="os-header">
-                    <img src="windows.png?sanitize=true" srcset="" alt="Windows logo">
+                    <img src="windows.svg?sanitize=true" srcset="" alt="Windows logo">
                     <h1>Windows</h1>
                 </div>
        
@@ -132,8 +146,9 @@
                 </a>
                 <a href="https://github.com/yatima1460/Drill/releases/download/1.131/Drill-CLI-Windows-x86.zip" class="btn">
                     <img src="zip.svg?sanitize=true" srcset="" alt="Windows logo">
-                    <span class="spacer">CLI Portable x86 (alpha)</span>
+                    <span class="spacer">CLI Portable x86</span>
                 </a>
+                
                 <a href="javascript:void(0)" class="btn disabled">
                     <img src="msi.png?sanitize=true" srcset="" alt="Windows logo">
                     <span class="spacer">Installer x64</span>
@@ -142,7 +157,7 @@
                     <img src="zip.svg?sanitize=true" srcset="" alt="Windows logo">
                     <span class="spacer">Portable x64</span>
                 </a>
-                <a href="javascript:void(0)" class="btn disabled">
+                <!-- <a href="javascript:void(0)" class="btn disabled">
                 <img src="msi.png?sanitize=true" srcset="" alt="Windows logo">
                     <span class="spacer">Installer x86</span>
                 </a>
@@ -153,7 +168,7 @@
                 <a href="javascript:void(0)" class="btn disabled">
                     <img src="zip.svg?sanitize=true" srcset="" alt="Windows logo">
                     <span class="spacer">Portable ARM</span>
-                </a>
+                </a> -->
             </div>
             <div class="os">
                 <div class="os-header">
@@ -168,8 +183,12 @@
                     <img src="zip.svg?sanitize=true" srcset="" alt="Apple logo">
                     <span class="spacer">Portable x64</span>
                 </a>
+                <a href="javascript:void(0)" class="btn disabled">
+                        <img src="gz.svg?sanitize=true" srcset="" alt="gz">
+                        <span class="spacer">CLI Portable x64</span>
+                    </a>
             </div>
-            <div class="os">
+            <!-- <div class="os">
                 <div class="os-header">
                     <img src="android.png" srcset="" alt="Android logo">
                     <h1>Android</h1>
@@ -180,7 +199,7 @@
                 </a>
 
 
-            </div>
+            </div> -->
             <div class="os">
                 <div class="os-header">
                     <img src="dlang.svg" srcset="" alt="Dlang logo">
@@ -190,7 +209,7 @@
 
                 <a href="http://github.com/yatima1460/Drill" target="_blank" class="btn">
                    
-                        <img src="Octocat.jpg?sanitize=true" srcset="" alt="github">
+                        <img src="github.svg?sanitize=true" srcset="" alt="github">
                         <span class="spacer">GitHub</span>
 
                 </a>
@@ -221,7 +240,7 @@
 
     <footer class="site-footer">
 
-            <div class="footer-buttons">
+            <div class="footer-button-social">
         
                     <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fwww.drill.santamorena.me%2F"
                         target="_blank"><img
@@ -231,7 +250,7 @@
                         target="_blank"><img src="fshare.svg?sanitize=true"></a>
                     </div>
               
-                    <div class="footer-buttons">
+                    <div class="footer-buttons-travis">
             <a href="https://travis-ci.org/yatima1460/Drill" target="_blank"><img
                 src="https://travis-ci.org/yatima1460/Drill.svg?branch=master"></a>
         <a href="https://github.com/yatima1460/Drill/issues" target="_blank"><img
@@ -259,7 +278,7 @@
                 name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
             <img alt="" border="0" src="https://www.paypal.com/en_IT/i/scr/pixel.gif" width="1" height="1" />
         </form>
-        <div>Some icons are made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" 		    title="Flaticon">www.flaticon.com</a> and licensed with <a href="http://creativecommons.org/licenses/by/3.0/" 		    title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+        <div>Some icons are made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> and <a href="https://www.flaticon.com/authors/icomoon" title="Icomoon">Icomoon</a> from <a href="https://www.flaticon.com/" 		    title="Flaticon">www.flaticon.com</a> and licensed with <a href="http://creativecommons.org/licenses/by/3.0/" 		    title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
     </footer>
 
 </body>
