@@ -290,36 +290,13 @@
                 name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
             <img alt="" border="0" src="https://www.paypal.com/en_IT/i/scr/pixel.gif" width="1" height="1" />
         </form>
-        <div class="currently-active">
-            <span id="active"></span> <span> users online</span>
-           </div>
+      
         <div>Some icons are made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> and <a href="https://www.flaticon.com/authors/icomoon" title="Icomoon">Icomoon</a> from <a href="https://www.flaticon.com/" 		    title="Flaticon">www.flaticon.com</a> and licensed with <a href="http://creativecommons.org/licenses/by/3.0/" 		    title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
     </footer>
         
     
 </body>
 
-<script src="https://cdn.pubnub.com/sdk/javascript/pubnub.4.20.2.js"></script>
-<script>
-var active = document.getElementById('active');
-function setCurrentlyActiveUsers(numberOfUsers) {
-  active.innerText = numberOfUsers.toString();
-}
-setCurrentlyActiveUsers(1);
-var pubnub = new PubNub({
-    publishKey : 'pub-c-9b361f7e-f8f2-43e6-837d-66183ccd9ab7',
-    subscribeKey : 'sub-c-aadd61fa-79bb-11e9-a9da-06324c5f6dce',
-    heartbeatInterval: 30
-});
-pubnub.addListener({
-  presence: function(presenceEvent) {
-    setCurrentlyActiveUsers(presenceEvent.occupancy);
-  }
-});
-pubnub.subscribe({ 
-  channels: ['myWebPage1'],
-  withPresence: true
-});
-</script>
+
 
 </html>
